@@ -120,8 +120,8 @@ This module provides a mechanism to log the source for each call to decrypt. Thi
 It is recommended to enable this logging after you have handled the re-encryption of all data in your system, but _before_ you invalidate the old keys. This will give you an indication that you have properly handled everything, because if you see a log written it will tell you that something has been missed and where to go to find the source of the issue.
 
 ```bash
-php bin/magento config:set --lock-env dev/debug/gene_encryption_manager_enable_decrypt_logging 1
 php bin/magento config:set --lock-env dev/debug/gene_encryption_manager_only_log_old_decrypts 1
+php bin/magento config:set --lock-env dev/debug/gene_encryption_manager_enable_decrypt_logging 1
 ```
 
 The log file is located in <mage_dir>/var/log/gene_encryption_key.log
