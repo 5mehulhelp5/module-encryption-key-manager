@@ -26,7 +26,7 @@ class InvalidatedKeyHasher extends MageEncryptor
         Random $random,
         DeploymentConfig $deploymentConfig,
         private readonly ScopeConfigInterface $scopeConfig,
-        KeyValidator $keyValidator = null
+        ?KeyValidator $keyValidator = null
     ) {
         parent::__construct($random, $deploymentConfig, $keyValidator);
 

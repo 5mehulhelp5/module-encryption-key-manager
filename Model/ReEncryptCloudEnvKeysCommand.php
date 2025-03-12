@@ -39,7 +39,7 @@ class ReEncryptCloudEnvKeysCommand
      * @return array
      * @throws \Exception
      */
-    public function execute(array $environmentVariables = null): array
+    public function execute(?array $environmentVariables = null): array
     {
         if ($environmentVariables === null) {
             if (!isset($_ENV)) {
